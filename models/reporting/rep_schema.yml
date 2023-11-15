@@ -1,0 +1,17 @@
+version: 2
+
+models:
+    - name: monthly_crime_weather
+      description: "Number of crime per month and weather link  "
+      columns:
+          - name: month
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: most_commited_crime_monthly
+      description: "3 most commit crimes monthly "
+      columns:
+          - name: month
+            tests:
+                - not_null
