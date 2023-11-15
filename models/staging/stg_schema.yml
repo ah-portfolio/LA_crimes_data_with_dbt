@@ -1,0 +1,39 @@
+
+version: 2
+
+models:
+    - name: rainy_day
+      description: "Give rain power for each day : max rain power is for the rainiest day since 2020 "
+      columns:
+          - name: date
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+          - name : rain
+            description : "Flag for wind"
+            tests:
+                - accepted_values :
+                    values: ['N','Y']
+    - name: warm_day
+      description: "Give max temp for each day : max scale is for the warmest day since 2020 "
+      columns:
+          - name: date
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: windy_day
+      description: "Give avg wind speed for each day : max scale is for the windiest day since 2020 "
+      columns:
+          - name: date
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+          - name : wind
+            description : "Flag for wind"
+            tests:
+                - accepted_values:
+                    values: ['N','Y']

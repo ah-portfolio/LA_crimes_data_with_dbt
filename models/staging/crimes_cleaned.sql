@@ -1,0 +1,23 @@
+SELECT 
+dr_no,
+PARSE_DATE("%m/%d/%Y",left(date_rptd,10)) as date_rptd,
+PARSE_DATE("%m/%d/%Y",left(date_occ,10)) as date_occ,
+time_occ,
+area,
+area_name,
+rpt_dist_No,
+crm_cd,
+crm_cd_desc,
+mocodes,
+vict_age,
+vict_sex,
+vict_descent,
+premis_cd,
+premis_desc,
+weapon_used_cd,
+weapon_desc,
+status,
+"status desc" as status_desc,
+LAT as latitude,
+LON as longitude
+ FROM {{source('raw','crimes')}}

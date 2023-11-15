@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    database: daring-card-399612  
+    schema: dbt_raw_LA  
+    tables:
+      - name: crimes
+      - name: weather
