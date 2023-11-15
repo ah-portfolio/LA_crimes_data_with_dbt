@@ -39,7 +39,16 @@ monthly_crime_weather : number of crime per month and the weather associated
 
 most_commited_crime_monthly :  3 most commited crime per month 
 
+
 ## Data lineage :
 ![image](https://github.com/ah-portfolio/LA_crimes_data_with_dbt/assets/110063004/1905cd79-8d52-4341-9d4c-b03f2309652a)
 
-    
+
+## Results :
+On Looker Studio :
+Number of crime per month (from 2020 to 2022)
+  ![image](https://github.com/ah-portfolio/LA_crimes_data_with_dbt/assets/110063004/11fa2646-0d2f-46ff-8e09-71db28ed7716)
+
+Number of crime function of wind average rate (each point is a month between 2020-01 and 2022-12)
+![image](https://github.com/ah-portfolio/LA_crimes_data_with_dbt/assets/110063004/8e782b04-35ae-4065-844c-de95526f9469)
+
