@@ -27,7 +27,7 @@ Three layers was build in three different datasets :
 
 #### Staging :
 
-- 3 weather KPI developed : 
+- 3 weather KPI developed. For each day a grade between 0 and 100 is given for rain, warm and wind. For exemple a grade of 100/100 of rain corresponds to the rainest day from 2023. This grade is based on ntile. 
      + RAIN
      + WARM
      + WIND
